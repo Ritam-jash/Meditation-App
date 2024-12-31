@@ -4,7 +4,7 @@ import { BreathingSettings } from '../types/theme';
 export function useBreathingAnimation(
   breathingState: 'ready' | 'breathe-in' | 'hold' | 'breathe-out',
   isActive: boolean,
-  settings: BreathingSettings
+  _settings: BreathingSettings
 ) {
   const [scale, setScale] = useState(1);
   const [prevState, setPrevState] = useState(breathingState);
